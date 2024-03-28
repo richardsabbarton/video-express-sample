@@ -1,0 +1,16 @@
+project:
+  name: video-express-sample
+instance:
+  name: dev
+  runtime: nodejs16
+  region: aws.euw1
+  application-id: ca2e0588-03a7-4c19-a37b-88dff8ed305d
+  entrypoint: [node, server.js]
+  environment:
+    - name: APIKEY
+      value: "47880151"
+    - name: APISECRET
+      value: "4d43996cca2502b60b97aa267c5acf02125e10d4"
+debug:
+  name: debug
+  entrypoint: [node, server.js]
